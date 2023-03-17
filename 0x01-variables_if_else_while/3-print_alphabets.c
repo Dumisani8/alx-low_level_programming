@@ -1,23 +1,23 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char c;
-/* Print lowercase alphabet */
-for (c = 'a'; c <= 'z'; c++) 
+char c = 'a';
+while (c <= 'z')
 {
 putchar(c);
+c++;
 }
-/* Print uppercase alphabet */
-for (c = 'A'; c <= 'Z'; c++)
+c = 'A';
+while (c <= 'Z')
 {
 putchar(c);
+c++;
 }
-/* Print newline */
 putchar('\n');
 return (0);
 }

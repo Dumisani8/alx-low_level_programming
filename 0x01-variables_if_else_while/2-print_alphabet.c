@@ -1,10 +1,14 @@
 #include <stdio.h>
-int main() {
-char c = 'a';
-do {
+/**
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+char c;
+for (c = 'a'; c <= 'z'; c++)
 putchar(c);
-c++;
-} while(c <= 'z');
 putchar('\n');
-return 0;
+return (0);
 }
