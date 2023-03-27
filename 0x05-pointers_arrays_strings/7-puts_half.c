@@ -4,7 +4,7 @@
 * puts_half - print the second half of a string
 * @str: the string to print
 */
- void puts_half(char *str)
+void puts_half(char *str)
 {
 int length = 0, i;
 /* find the length of the string */
