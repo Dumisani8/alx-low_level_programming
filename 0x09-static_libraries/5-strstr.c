@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strstr - locates a substring
  * @haystack: string to search through
@@ -10,24 +9,19 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *start, *search;
-
-	while (*haystack)
-	{
-		start = haystack;
-		search = needle;
-
-		while (*haystack && *search && *haystack == *search)
-		{
-			haystack++;
-			search++;
-		}
-
-		if (!*search)
-			return (start);
-
-		haystack = start + 1;
-	}
-
-	return (NULL);
+char *start, *search;
+while (*haystack)
+{
+start = haystack;
+search = needle;
+while (*haystack && *search && *haystack == *search)
+{
+haystack++;
+search++;
+}
+if (!*search)
+return (start);
+haystack = start + 1;
+}
+return (NULL);
 }
